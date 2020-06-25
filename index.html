@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>  
+    
+<head>
+    <meta charset="utf-8">  
+</head>  
+    
+<body>  
+    <div>
+      <button id="myButton">Go back to Facebook</button>
+    </div>
+    <script> 
+        window.onload = function () {
+          // send component 'initialized' event
+          window.parent.postMessage({
+            type: 'initialized',
+            data: null
+          }, '*');
+        }
+        
+        document.getElementById("myButton").onclick = function () {
+          location.href = "https://www.facebook.com/SAPSocialCommerce/photos/a.119514819805962/121754326248678/?type=3&av=105649251192519&eav=AfblgNy8VI_IonxwZ6L9ELKm_QGyzwxA0O3WTVN9a3-v88rN6Iykn0-WGuPRjWmLjxY&theater";
+        };
+    </script> 
+</body>  
+   
+</html> 
